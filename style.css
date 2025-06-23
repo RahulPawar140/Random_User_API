@@ -1,0 +1,82 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body background with vibrant bluish-teal tone */
+body {
+    background-color: #d2f0f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+/* Main card container */
+#user_info {
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 35px 25px;
+    width: 100%;
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    transition: all 0.3s ease;
+}
+
+/* Profile picture styling */
+#user_img img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #3bb4c1;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings for each data field */
+#user_info h1 {
+    font-size: 17px;
+    font-weight: 500;
+    color: #333333;
+    text-align: center;
+    line-height: 1.4;
+}
+
+/* Stylish button */
+#btn1 {
+    margin-top: 15px;
+    background-color: #3bb4c1;
+    color: white;
+    padding: 10px 26px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#btn1:hover {
+    background-color: #1f8e9d;
+    transform: scale(1.05);
+}
+
+/* Error message box */
+#data-not-found {
+    display: none;
+    font-size: 19px;
+    font-weight: bold;
+    color: #e74c3c;
+    text-align: center;
+    padding: 20px;
+    border: 2px dashed #e74c3c;
+    background-color: #ffeaea;
+    border-radius: 10px;
+}
